@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abhishek Parindya — Cybersecurity Undergraduate, Developer and Digital Creator." />
+  <title>Abhishek Parindya | Cybersecurity Portfolio</title>
+ <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><span>AP</span><small>Digital Portfolio</small></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a><a href="#feedback">Feedback</a><a href="#contact">Contact</a>
+      <a class="dashboard-link" id="dashboardLink" href="./admin.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-word" aria-hidden="true">PORTFOLIO</div>
+      <div class="hero-copy reveal">
+        <p class="script">Hello, I’m</p>
+        <h1>ABHISHEK<br>PARINDYA</h1>
+        <p class="role">CYBERSECURITY UNDERGRADUATE<br>&amp; DIGITAL CREATOR</p>
+        <p class="intro">I combine cybersecurity knowledge, creative media and web development to build secure, useful and visually engaging digital experiences.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">View my work</a><a class="btn btn-ghost" href="#contact">Let’s connect</a></div>
+      </div>
+      <div class="portrait-wrap reveal"><div class="portrait-halo"></div><img src="assets/abhishek-portrait.png" alt="Abhishek Parindya wearing a black suit" /></div>
+      <aside class="hero-side reveal">
+        <blockquote>“Security is strongest when thoughtful design and responsible technology work together.”</blockquote>
+        <div class="stats">
+          <div><strong id="projectStat">03+</strong><span>Featured projects</span></div>
+          <div><strong id="toolStat">08+</strong><span>Technical tools</span></div>
+          <div><strong id="clubStat">02</strong><span>University clubs</span></div>
+        </div>
+      </aside>
+      <a class="scroll-cue" href="#about"><span></span>Scroll to explore</a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div><p class="eyebrow" id="aboutEyebrow">Profile</p><h2 id="aboutHeading">Building a career at the intersection of <em>cybersecurity</em>, technology and creativity.</h2></div>
+        <div class="about-copy">
+          <div class="institution-strip" aria-label="Education institutions">
+            <div class="institution-logo"><img src="assets/vu.png" alt="Victoria University logo"><span>Victoria University</span></div>
+            <div class="institution-logo"><img src="assets/nsbm.png" alt="NSBM Green University logo"><span>NSBM Green University</span></div>
+            <div class="institution-logo"><img src="assets/esoft.jpeg" alt="ESOFT Metro Campus logo"><span>ESOFT Metro Campus</span></div>
+          </div>
+          <div id="aboutParagraphs"></div>
+          <div class="quick-links" id="aboutLinks">
+            <a href="mailto:abhishekparindya2007@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/abhishek-parindya-326512411/" target="_blank">LinkedIn ↗</a><a href="https://github.com/abhishekparindya2004" target="_blank">GitHub ↗</a><a href="https://devpost.com/abhishekparindya2007may3?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">Devpost ↗</a><a href="https://unstop.com/u/abhispar56183" target="_blank">Unstop ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-head"><div><div class="section-label">02 / Selected projects</div><h2>Work that blends function, structure and visual clarity.</h2></div><span class="micro-copy">Managed from the dashboard</span></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section details" id="experience">
+      <div class="details-grid">
+        <div class="education-panel reveal">
+          <div class="section-label prominent-label">03 / Education &amp; skills</div><h2>Education</h2>
+          <div class="timeline" id="educationTimeline"></div>
+          <h3 class="subheading">Core skills</h3><div class="tags" id="coreSkillTags"></div>
+          <h3 class="subheading">Programming &amp; tools</h3><div class="tags" id="toolTags"></div>
+          <h3 class="subheading">Cybersecurity knowledge</h3><div class="tags" id="cyberSkillTags"></div>
+          <h3 class="subheading">Languages</h3><div class="tags" id="languageTags"></div>
+        </div>
+        <div class="process-panel reveal">
+          <div class="section-label prominent-label">04 / My approach</div><h2>Work process</h2>
+          <div class="process-list" id="processList"></div>
+          <h3 class="subheading">Leadership &amp; club activities</h3>
+          <div class="mini-cards" id="clubCards"></div>
+          <h3 class="subheading">Workshops &amp; training</h3><div class="mini-cards" id="workshopCards"></div>
+        </div>
+        <aside class="quote-panel reveal"><span class="quote-mark">“</span><p id="approachQuote"></p><span class="signature" id="approachSignature"></span></aside>
+      </div>
+    </section>
+
+    <section class="section certifications" id="certifications">
+      <div class="section-head"><div><div class="section-label prominent-label">05 / Learning beyond the classroom</div><h2>Certifications and achievements.</h2></div><span class="micro-copy">Select an achievement to view its certificate</span></div>
+      <div class="achievement-list" id="achievementList"></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-head"><div><div class="section-label prominent-label">06 / Project gallery</div><h2>Selected visual evidence and uploads.</h2></div><span class="micro-copy">Gallery items update from the dashboard</span></div>
+      <div class="project-gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="section feedback-section" id="feedback">
+      <div class="section-head"><div><div class="section-label prominent-label">07 / Community feedback</div><h2>What people say about my work.</h2></div><span class="micro-copy">Shared live updates on every device</span></div>
+      <div class="feedback-layout">
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-row"><label>Name<input required name="name" placeholder="Your name"></label><label>Email<input required type="email" name="email" placeholder="you@example.com"></label></div>
+          <div class="form-row"><label>Association<select name="category"><option>Personal association</option><option>Work association</option><option>Job association</option><option>Performance</option></select></label><label>Rating<select name="rating"><option value="5">5 — Excellent</option><option value="4">4 — Very good</option><option value="3">3 — Good</option><option value="2">2 — Fair</option><option value="1">1 — Needs improvement</option></select></label></div>
+          <label>Google profile image URL or photo<input name="avatarUrl" placeholder="Paste image URL, or choose a file below"></label>
+          <label class="file-label">Choose profile photo<input type="file" id="feedbackAvatar" accept="image/*"></label>
+          <label>Your feedback<textarea required name="message" rows="5" placeholder="Share your experience, observation or recommendation..."></textarea></label>
+          <button class="btn btn-primary" type="submit">Publish feedback</button><p id="feedbackThankYou" class="feedback-thank-you" hidden></p><p class="form-note">Google account photos require Google Sign-In configuration. This version supports an uploaded image or image URL and falls back to an initial-based avatar.</p>
+        </form>
+        <div class="feedback-stage"><div class="feedback-track" id="feedbackTrack"></div></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy reveal"><div class="section-label prominent-label">08 / Contact</div><h2 id="contactHeading"></h2><p id="contactIntro"></p><a class="btn btn-primary" id="contactButton">Start a conversation</a></div>
+      <div class="contact-details reveal"><a href="mailto:abhishekparindya2007@gmail.com"><span>✉</span>abhishekparindya2007@gmail.com</a><a href="tel:+94762242905"><span>☎</span>+94 76 224 2905</a><a href="tel:+94778248434"><span>☎</span>+94 77 824 8434</a><p><span>⌖</span>274, Ampitiya, Kandy, Sri Lanka</p></div>
+      <div class="contact-art reveal" aria-hidden="true"><div class="laptop"><div class="screen"><small>CYBERSECURITY • CREATIVE • DEVELOPMENT</small><strong>AP</strong><div class="screen-line"></div></div><div class="keyboard"></div></div></div>
+    </section>
+  </main>
+
+  <button class="ai-fab" id="aiFab" aria-label="Open AI assistant"><span>AI</span><i></i></button>
+  <section class="ai-panel" id="aiPanel" aria-label="Portfolio AI assistant">
+    <header><div><strong>AP Assistant</strong><small>Portfolio support</small></div><button id="closeAi">×</button></header>
+    <div class="ai-messages" id="aiMessages"><div class="bot-msg">Hi! Ask me about Abhishek’s education, projects, technical skills, clubs, workshops or contact details.</div></div>
+    <form id="aiForm"><input id="aiInput" autocomplete="off" placeholder="Ask about the portfolio..."><button>Send</button></form>
+  </section>
+
+
+
+  <div class="modal contact-choice-modal" id="contactChoiceModal">
+    <div class="modal-card contact-choice-card">
+      <button class="modal-close" data-close="contactChoiceModal" aria-label="Close">×</button>
+      <span class="contact-choice-kicker">Choose how to connect</span>
+      <h2>Start a conversation</h2>
+      <p>Select the option that is most convenient for you.</p>
+      <div class="contact-choice-grid" id="contactChoiceGrid"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="galleryModal"><div class="modal-card gallery-modal-card"><button class="modal-close" data-close="galleryModal" aria-label="Close">×</button><img id="galleryModalImage" alt="Expanded gallery image"><div class="gallery-modal-copy"><h2 id="galleryModalTitle"></h2><p id="galleryModalDescription"></p></div></div></div>
+  <div class="modal" id="certificateModal"><div class="modal-card certificate-card"><button class="modal-close" data-close="certificateModal">×</button><h2 id="certificateTitle">Certificate</h2><div id="certificateViewer"></div></div></div>
+
+
+  <footer><p>© <span id="year"></span> Abhishek Parindya. Crafted with purpose.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="shared-storage.js?v=11.0"></script>
+  <script src="script.js?v=12.0"></script>
+
+</body>
+</html>

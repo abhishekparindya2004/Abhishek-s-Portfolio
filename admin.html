@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+ <title>Abhishek Parindya | Cybersecurity Portfolio</title>
+ <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page-body">
+  <header class="site-header admin-page-header">
+    <a class="brand" href="./index.html"><span>AP</span><small>Admin Console</small></a>
+    <a class="dashboard-link portfolio-nav" id="portfolioLink" href="./index.html" target="_self">View Portfolio</a>
+  </header>
+
+  <main class="admin-page-main">
+    <section class="admin-login admin-page-card" id="adminLogin">
+      <div class="section-label">Secure dashboard</div>
+      <h2>Administrator login</h2>
+      <p>Manage projects, certificates, gallery uploads, feedback and website statistics.</p>
+      <form id="loginForm">
+        <label>Username<input name="username" autocomplete="username" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="btn btn-primary">Login</button>
+        <p id="loginError"></p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard admin-page-card" id="adminDashboard" hidden>
+      <div class="admin-top">
+        <div><div class="section-label">AP control centre</div><h2>Portfolio dashboard</h2></div>
+        <div class="admin-top-actions"><a class="small-btn portfolio-preview portfolio-nav" id="portfolioPreviewLink" href="./index.html" target="_self">Open portfolio ↗</a><button class="small-btn" id="exportReport">Export report</button><button class="small-btn danger" id="logoutAdmin">Logout</button></div>
+      </div>
+      <div class="admin-metrics" id="adminMetrics"></div>
+      <div class="admin-tabs section-admin-tabs">
+        <button class="active" data-tab="aboutTab">01 About</button><button data-tab="projectsTab">02 Projects</button><button data-tab="educationTab">03 Education & Skills</button><button data-tab="approachTab">04 My Approach</button><button data-tab="achievementsTab">05 Learning</button><button data-tab="galleryTab">06 Gallery</button><button data-tab="feedbackTab">07 Feedback</button><button data-tab="contactTab">08 Contact</button>
+      </div>
+      <div class="admin-tab active" id="aboutTab">
+        <form id="aboutForm" class="admin-form"><label>Small heading<input name="eyebrow"></label><label>Main heading<textarea name="heading"></textarea></label><label>About paragraphs (one per line)<textarea name="paragraphs"></textarea></label><button class="btn btn-primary">Update About section</button></form>
+        <form id="aboutLinkForm" class="admin-form compact-form"><input type="hidden" name="id"><label>Link label<input required name="label"></label><label>Link URL<input required name="url"></label><button class="btn btn-primary">Insert / update link</button></form><div class="admin-list" id="adminAboutLinkList"></div>
+      </div>
+      <div class="admin-tab" id="projectsTab"><form id="projectAdminForm" class="admin-form"><input type="hidden" name="id"><label>Project name<input required name="title"></label><label>Technology/category<input required name="meta"></label><label>Description<textarea required name="description"></textarea></label><label>Project URL<input name="url"></label><label>Cover image URL<input name="image" placeholder="https://..."></label><label>Or upload project cover<input type="file" id="projectCoverFile" accept="image/jpeg,image/png,image/webp,image/gif"></label><small class="upload-help">Recommended: 1600 × 1000 px, JPG/PNG/WebP, maximum 12 MB</small><button class="btn btn-primary">Insert / update project</button></form><div class="admin-list" id="adminProjectList"></div></div>
+      <div class="admin-tab" id="educationTab">
+        <form id="educationForm" class="admin-form"><input type="hidden" name="id"><label>Period<input required name="period"></label><label>Qualification<input required name="title"></label><label>Institution / details<input required name="details"></label><button class="btn btn-primary">Insert / update education</button></form><div class="admin-list" id="adminEducationList"></div>
+        <form id="skillForm" class="admin-form compact-form"><input type="hidden" name="id"><label>Skill category<select name="category"><option value="coreSkills">Core skill</option><option value="tools">Programming & tool</option><option value="cyberSkills">Cybersecurity knowledge</option><option value="languages">Language</option></select></label><label>Skill / language<input required name="value"></label><button class="btn btn-primary">Insert / update skill</button></form><div class="admin-list" id="adminSkillList"></div>
+      </div>
+      <div class="admin-tab" id="approachTab">
+        <form id="processForm" class="admin-form"><input type="hidden" name="id"><label>Step number<input required name="number"></label><label>Icon / symbol<input name="icon"></label><label>Step title<input required name="title"></label><label>Description<textarea required name="description"></textarea></label><button class="btn btn-primary">Insert / update process step</button></form><div class="admin-list" id="adminProcessList"></div>
+        <form id="activityForm" class="admin-form compact-form"><input type="hidden" name="id"><label>Type<select name="type"><option value="club">Club activity</option><option value="workshop">Workshop / training</option></select></label><label>Title<input required name="title"></label><label>Period / organizer<input name="meta"></label><label>Description<textarea name="description"></textarea></label><button class="btn btn-primary">Insert / update activity</button></form><div class="admin-list" id="adminActivityList"></div>
+        <form id="approachSettingsForm" class="admin-form compact-form"><label>Approach quote<textarea name="quote"></textarea></label><label>Signature<input name="signature"></label><button class="btn btn-primary">Update quote</button></form>
+      </div>
+      <div class="admin-tab" id="achievementsTab"><form id="achievementAdminForm" class="admin-form"><input type="hidden" name="id"><label>Year<input required name="year"></label><label>Title<input required name="title"></label><label>Details<input required name="details"></label><label>Google Drive certificate link<input name="certificateUrl" placeholder="https://drive.google.com/..."></label><label>Or upload certificate<input type="file" id="certificateFile" accept="image/*,.pdf"></label><button class="btn btn-primary">Insert / update achievement</button></form><div class="admin-list" id="adminAchievementList"></div></div>
+      <div class="admin-tab" id="galleryTab"><form id="galleryAdminForm" class="admin-form"><input type="hidden" name="id"><label>Project title<input required name="title"></label><label>Category<select required name="category"><option>Web Development</option><option>Mobile Apps</option><option>UI/UX Design</option><option>AI / ML</option><option>Other</option></select></label><label>Description<textarea name="description" placeholder="Brief description shown under the title"></textarea></label><label>Technologies<input name="technologies" placeholder="React, Node.js, Chart.js"></label><label>Project link<input name="url" type="url" placeholder="https://..."></label><label>Image URL<input name="image"></label><label>Or upload image<input type="file" id="galleryFile" accept="image/jpeg,image/png,image/webp,image/gif"></label><small class="upload-help">JPG, PNG, WebP or GIF • maximum 12 MB • HEIC must be converted first</small><button class="btn btn-primary">Insert / update gallery item</button></form><div class="admin-list" id="adminGalleryList"></div></div>
+      <div class="admin-tab" id="feedbackTab"><form id="feedbackAdminForm" class="admin-form"><input type="hidden" name="id"><label>Name<input required name="name"></label><label>Email<input name="email" type="email"></label><label>Category<input required name="category"></label><label>Rating<input required name="rating" type="number" min="1" max="5"></label><label>Message<textarea required name="message"></textarea></label><label>Avatar URL<input name="avatar"></label><button class="btn btn-primary">Insert / update feedback</button></form><div class="admin-list" id="adminFeedbackList"></div></div>
+      <div class="admin-tab" id="contactTab"><form id="contactForm" class="admin-form"><label>Heading (use a new line for line break)<textarea name="heading"></textarea></label><label>Introduction<textarea name="intro"></textarea></label><label>Button text<input name="buttonText"></label><label>Email<input name="email" type="email"></label><label>Phone 1<input name="phone1"></label><label>Phone 2<input name="phone2"></label><label>Location<input name="location"></label><button class="btn btn-primary">Update Contact section</button></form><form id="contactLinkForm" class="admin-form compact-form"><input type="hidden" name="id"><label>Platform<input required name="label"></label><label>URL<input required name="url"></label><button class="btn btn-primary">Insert / update contact link</button></form><div class="admin-list" id="adminContactLinkList"></div></div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="shared-storage.js?v=12"></script>
+  <script src="admin.js?v=12"></script>
+</body>
+</html>
