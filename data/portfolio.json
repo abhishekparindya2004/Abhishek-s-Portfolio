@@ -1,0 +1,258 @@
+{
+  "about": {
+    "eyebrow": "Profile",
+    "heading": "Building a career at the intersection of <em>cybersecurity</em>, technology and creativity.",
+    "paragraphs": [
+      "I am a motivated cybersecurity undergraduate at NSBM Green University with a strong foundation in network security, ethical hacking, risk assessment, access control, vulnerability assessment and incident response.",
+      "Alongside my technical studies, I create promotional content, photographs and videos for university activities. I enjoy transforming ideas into clear digital experiences, collaborating with teams and continuously improving my technical and communication skills."
+    ],
+    "links": [
+      {
+        "id": "l1",
+        "label": "Email me ↗",
+        "url": "mailto:abhishekparindya2007@gmail.com"
+      },
+      {
+        "id": "l2",
+        "label": "LinkedIn ↗",
+        "url": "https://www.linkedin.com/in/abhishek-parindya-326512411/"
+      },
+      {
+        "id": "l3",
+        "label": "GitHub ↗",
+        "url": "https://github.com/abhishekparindya2004"
+      },
+      {
+        "id": "l4",
+        "label": "Devpost ↗",
+        "url": "https://devpost.com/abhishekparindya2007may3?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+      },
+      {
+        "id": "l5",
+        "label": "Unstop ↗",
+        "url": "https://unstop.com/u/abhispar56183"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Red Pulse",
+      "meta": "HTML • CSS • JavaScript",
+      "description": "Responsive online news platform with category-based sections, modern UI, mobile-friendly layouts and interactive navigation.",
+      "url": "https://github.com/abhishekparindya2004",
+      "image": ""
+    },
+    {
+      "id": "p2",
+      "title": "Zey-AI",
+      "meta": "Artificial Intelligence Project",
+      "description": "AI-powered assistant prototype focused on improving user interaction and productivity through an accessible interface.",
+      "url": "https://github.com/abhishekparindya2004",
+      "image": ""
+    },
+    {
+      "id": "p3",
+      "title": "Citadel",
+      "meta": "Cybersecurity / Technology Project",
+      "description": "Technology-focused application demonstrating secure development principles and structured project architecture.",
+      "url": "https://github.com/abhishekparindya2004",
+      "image": ""
+    }
+  ],
+  "education": [
+    {
+      "id": "e1",
+      "period": "2026 — Present",
+      "title": "Major in Cyber Security",
+      "details": "NSBM Green University • Victoria University affiliated degree"
+    },
+    {
+      "id": "e2",
+      "period": "2024 — 2025",
+      "title": "Information Technology Diploma Level",
+      "details": "ESOFT Metro Campus"
+    },
+    {
+      "id": "e3",
+      "period": "2023",
+      "title": "G.C.E. Ordinary Level Examination",
+      "details": "Ecole International School, Kandy"
+    },
+    {
+      "id": "e4",
+      "period": "2017",
+      "title": "G.C.E. Scholarship Examination",
+      "details": "Gamini Dissanayake College, Hasalaka"
+    }
+  ],
+  "coreSkills": [
+    "Project Management",
+    "Cybersecurity Fundamentals",
+    "Teamwork",
+    "Time Management",
+    "Leadership",
+    "Effective Communication",
+    "Critical Thinking",
+    "Digital Marketing"
+  ],
+  "tools": [
+    "Java",
+    "Python",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "SQL",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Microsoft Office",
+    "Wireshark",
+    "VirtualBox",
+    "Linux",
+    "Azure SQL"
+  ],
+  "cyberSkills": [
+    "Network Security",
+    "Ethical Hacking",
+    "Risk Assessment",
+    "Access Control",
+    "Vulnerability Assessment",
+    "Security Fundamentals",
+    "Incident Response"
+  ],
+  "languages": [
+    "English — Fluent",
+    "Sinhala — Fluent",
+    "Tamil — Basic"
+  ],
+  "process": [
+    {
+      "id": "s1",
+      "number": "01",
+      "icon": "⌕",
+      "title": "Discover",
+      "description": "Understand the goals, audience, risks and success criteria."
+    },
+    {
+      "id": "s2",
+      "number": "02",
+      "icon": "◇",
+      "title": "Plan",
+      "description": "Define scope, structure, tools and a practical delivery path."
+    },
+    {
+      "id": "s3",
+      "number": "03",
+      "icon": "✎",
+      "title": "Design",
+      "description": "Create clear layouts and secure, user-focused solutions."
+    },
+    {
+      "id": "s4",
+      "number": "04",
+      "icon": "</>",
+      "title": "Build",
+      "description": "Develop, test and refine with attention to detail."
+    },
+    {
+      "id": "s5",
+      "number": "05",
+      "icon": "➤",
+      "title": "Deliver",
+      "description": "Document, communicate and improve from feedback."
+    }
+  ],
+  "activities": [
+    {
+      "id": "c1",
+      "type": "club",
+      "title": "NSBM NFORCE Club",
+      "meta": "2026 — Present",
+      "description": "Content Creator, Photographer & Videographer. Create promotional content, capture event media, edit multimedia and collaborate with the media team."
+    },
+    {
+      "id": "c2",
+      "type": "club",
+      "title": "NSBM Speakers Club",
+      "meta": "2025",
+      "description": "Active Member. Participate in public-speaking sessions, communication workshops, competitions and collaborative learning activities."
+    },
+    {
+      "id": "w1",
+      "type": "workshop",
+      "title": "HackOps Cybersecurity Workshop",
+      "meta": "2025 • NSBM Green University",
+      "description": ""
+    },
+    {
+      "id": "w2",
+      "type": "workshop",
+      "title": "Cybersecurity Awareness Workshop",
+      "meta": "2025 • NSBM Green University",
+      "description": ""
+    },
+    {
+      "id": "w3",
+      "type": "workshop",
+      "title": "AI Puppet Master Workshop",
+      "meta": "2024 • ESOFT Metro Campus",
+      "description": ""
+    }
+  ],
+  "approach": {
+    "quote": "Good security is not only about stopping threats. It is also about creating systems people can trust.",
+    "signature": "Abhishek"
+  },
+  "achievements": [
+    {
+      "id": "a1",
+      "year": "2025",
+      "title": "Speech Olympics",
+      "details": "Semi-finalist • NSBM Green University",
+      "certificateUrl": "",
+      "certificateData": ""
+    },
+    {
+      "id": "a2",
+      "year": "2024",
+      "title": "AI Puppet Master Certification",
+      "details": "Participation • ESOFT Metro Campus",
+      "certificateUrl": "",
+      "certificateData": ""
+    },
+    {
+      "id": "a3",
+      "year": "2023",
+      "title": "Inter-School Basketball Championship",
+      "details": "Second place • Ecole International School",
+      "certificateUrl": "",
+      "certificateData": ""
+    },
+    {
+      "id": "a4",
+      "year": "2017",
+      "title": "Inter-School Chess Tournament",
+      "details": "Second place • Sri Sumangala College, Kandy",
+      "certificateUrl": "",
+      "certificateData": ""
+    }
+  ],
+  "gallery": [],
+  "feedback": [],
+  "contact": {
+    "heading": "LET’S BUILD\nSOMETHING <em>SECURE.</em>",
+    "intro": "I’m open to cybersecurity internships, collaborative projects, creative media work and opportunities where I can learn, contribute and grow.",
+    "buttonText": "Start a conversation",
+    "email": "abhishekparindya2007@gmail.com",
+    "phone1": "+94 76 224 2905",
+    "phone2": "+94 77 824 8434",
+    "location": "274, Ampitiya, Kandy, Sri Lanka",
+    "links": []
+  },
+  "settings": {
+    "quote": "“Security is strongest when thoughtful design and responsible technology work together.”",
+    "intro": "I combine cybersecurity knowledge, creative media and web development to build secure, useful and visually engaging digital experiences.",
+    "projectSuffix": "+"
+  }
+}
